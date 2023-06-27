@@ -12,9 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;  
 }
 
-.container {
+.container{
     display: flex;
     align-items: center;
 }
@@ -26,20 +27,21 @@
 .lista-menu{
     display: none;
     position: absolute;
-    top: 60vw;
+    top: 100%;
+    width: 60vw;
 }
 
 .container_botao:checked ~ .lista-menu{
     display: block;
 }
 
-.lista-menu_titulo
+.lista-menu_titulo,
 .lista-menu_item{
     padding: 1em;
     background-color: var(--branco);
 }
 
-.lista-menu_link{
+.lista-menu_titulo{
     color: var(--laranja);
     font-weight: 700;
 }
@@ -52,6 +54,6 @@
     text-transform: uppercase;
 }
 
-/* .container_botao{
+.container_botao{
     display: none;
-} */
+}
